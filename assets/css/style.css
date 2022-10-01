@@ -1,0 +1,135 @@
+@import url('http://fonts.cdnfonts.com/css/modi-thorson');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1000ms; 
+    overflow: hidden;
+}
+body{
+    font-family:'Modi Thorson', sans-serif;
+    color: white;
+    background-color: rgba(139,0,0, 1);
+    animation: header 5s ease-in-out;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/marvel.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+@keyframes header {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.filmes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 290px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: menu 5s ease-in-out;
+}
+@keyframes menu{
+    0%{
+        width:100%;
+        background-color: rgba(139,0,0, 1);
+    }
+    25%{
+        background-color: rgba(139,0,0, 1);
+    }
+    50%{
+        background-color: rgba(139,0,0, 1);
+    }
+    75%{
+        background-color: rgba(139,0,0, 1);
+    }
+    100%{
+        width: 290px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+}
+.filmes h2{
+    font-size: 16px;
+    margin: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    animation: texto 6s ease-in-out;
+}
+@keyframes texto {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.filmes h2:hover{
+    color: rgb(192, 192, 192);
+    border-bottom: 2px solid rgba(139,0,0, 1);
+   
+}
+
+.filmes img{
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+    /* animation:texto 6s ease-in-out; */
+} 
+
+@media (max-width:768px) {
+    header{
+        background-position: -300px;
+    }
+}
+@media (max-width:480px) {
+    header{
+        background-position: -400px;
+    }
+    .filmes{
+        width: 100vw;
+    }
+    @keyframes menu{
+        0%{
+            width:100%;
+            background-color: rgba(139,0,0, 1);
+        }
+        25%{
+            background-color: rgba(139,0,0, 1);
+        }
+        50%{
+            background-color: rgba(139,0,0, 1);
+        }
+        75%{
+            background-color: rgba(139,0,0, 1);
+        }
+        100%{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+    }
+}
+
