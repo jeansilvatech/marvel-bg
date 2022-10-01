@@ -1,6 +1,6 @@
 # Marvel Background
 
-## Projeto desenvolvido com o objetivo de desenvolver e aprender habilidades em CSS
+## Projeto desenvolvido com o objetivo de desenvolver e aprender habilidades em CSS e JavaScript
 
 - HTML
 - CSS
