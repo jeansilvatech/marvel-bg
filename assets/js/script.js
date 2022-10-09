@@ -60,3 +60,6 @@ homemFormiga.addEventListener("click", ()=>{
     header.style.backgroundImage = "url('./assets/img/homem-formiga.jpg')"
 })
 
+// setTimeout(()=>{
+//     header.style.backgroundImage = "url('./assets/img/capita-marvel.jpg')"
+// }, 500)
